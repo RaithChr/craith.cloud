@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OE3LCR - Legenden & Erklärungen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0f0f1a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px; margin-bottom: 20px;
+            background: rgba(20, 20, 35, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        .title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2em; font-weight: 700;
+            color: #00ff88;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+        .back-link {
+            text-decoration: none;
+            color: #00ff88;
+            padding: 8px 16px;
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: rgba(0, 255, 136, 0.1);
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .legend-card {
+            background: rgba(20, 20, 35, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .legend-title {
+            font-size: 1.3em;
+            color: #ff4757;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .legend-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .legend-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .legend-label {
+            font-weight: 600;
+            color: #ffa502;
+            margin-bottom: 5px;
+        }
+        .legend-description {
+            font-size: 0.9em;
+            color: #aaa;
+            line-height: 1.6;
+        }
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .band-good { background: rgba(0, 255, 100, 0.3); border: 1px solid #00ff64; }
+        .band-fair { background: rgba(255, 165, 0, 0.3); border: 1px solid #ffa500; }
+        .band-poor { background: rgba(255, 100, 130, 0.3); border: 1px solid #ff6482; }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">ℹ️ Legenden & Erklärungen</div>
+            <a href="index.html" class="back-link">← Zurück</a>
+        </div>
+
+        <div class="content">
+            <!-- Band Conditions -->
+            <div class="legend-card">
+                <div class="legend-title">📊 Band Conditions</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label"><span class="color-box band-good"></span>GOOD</div>
+                    <div class="legend-description">Ausgezeichnete Bedingungen. Band ist offen und stark. Perfekt für DX-Kontakte.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label"><span class="color-box band-fair"></span>FAIR</div>
+                    <div class="legend-description">Durchschnittliche Bedingungen. Band funktioniert, aber mit Einschränkungen. Lokale bis regionale Kontakte möglich.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label"><span class="color-box band-poor"></span>POOR</div>
+                    <div class="legend-description">Schlechte Bedingungen. Band ist schwach oder geschlossen. Nur kurze Reichweite oder gar keine Ausbreitung.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">ℹ️ Abhängigkeit</div>
+                    <div class="legend-description">Band Conditions werden vom K-Index beeinflusst. Höhere Sonnenaktivität = bessere Propagation auf höheren Bändern (20m, 15m, 10m).</div>
+                </div>
+            </div>
+
+            <!-- Solar Activity -->
+            <div class="legend-card">
+                <div class="legend-title">☀️ Solar Activity</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Solar Flux Index (SFI)</div>
+                    <div class="legend-description">Messwert der Sonnenaktivität. Bereich: 60-300. Höhere Werte = bessere Propagation auf höheren Bändern.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Sunspot Number (SSN)</div>
+                    <div class="legend-description">Anzahl der sichtbaren Sonnenflecken. Direkter Indikator für die 11-Jahres-Sonnenzyklen.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">K-Index (Kp)</div>
+                    <div class="legend-description">Geomagnetischer Index (0-9). Misst Störungen des Magnetfelds. High K = Aurora, Low K = gute HF-Propagation.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Space Weather</div>
+                    <div class="legend-description"><strong>Quiet:</strong> Stabil | <strong>Active:</strong> Leichte Störungen | <strong>Storm:</strong> Magnetischer Sturm (K > 7)</div>
+                </div>
+            </div>
+
+            <!-- Mondphase -->
+            <div class="legend-card">
+                <div class="legend-title">🌙 Mondphase</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">🌑 Neumond</div>
+                    <div class="legend-description">Mond zwischen Erde & Sonne. Unsichtbar. Idealzeitpunkt für Beobachtungen schwacher Objekte.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">🌒🌓 Zunehmend</div>
+                    <div class="legend-description">Beleuchtete Seite nimmt zu. Erstes Viertel bei 25% Beleuchtung.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">🌕 Vollmond</div>
+                    <div class="legend-description">Mond vollständig beleuchtet. Beste EME-Bedingungen (Moonbounce). Hellste Phase.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">🌖🌗 Abnehmend</div>
+                    <div class="legend-description">Beleuchtete Seite nimmt ab. Letztes Viertel bei 75% Beleuchtung.</div>
+                </div>
+            </div>
+
+            <!-- Sonnen- und Mondzeiten -->
+            <div class="legend-card">
+                <div class="legend-title">🌅 Sunrise/Sunset & Moonrise/Set</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Sunrise / Sunset</div>
+                    <div class="legend-description">Zeitpunkte, wann die Sonne aufgeht/untergeht. Wichtig für Ionosphären-Propagation (Grey Line).</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Moonrise / Moonset</div>
+                    <div class="legend-description">Zeitpunkte, wann der Mond aufgeht/untergeht. Wichtig für EME-Kommunikation (Moonbounce).</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Grey Line</div>
+                    <div class="legend-description">Terminator zwischen Tag & Nacht. Optimale Bedingungen für DX auf HF-Bändern während Sunrise/Sunset.</div>
+                </div>
+            </div>
+
+            <!-- DX Cluster -->
+            <div class="legend-card">
+                <div class="legend-title">🌍 DX Cluster Spots</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Callsign</div>
+                    <div class="legend-description">Funkamateur, der gerade aktiv ist. Link zu QRZ möglich.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Frequency (QRG)</div>
+                    <div class="legend-description">Frequenz in MHz. Z.B. 14.250 = CW-Bereich im 20m-Band.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Region/Kontinent</div>
+                    <div class="legend-description">Geografische Region des DX-Stationen. Hilft bei Planung von Kontakten.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">UTC-Zeit</div>
+                    <div class="legend-description">Zeitstempel des Spots. Zeigt, wie aktuell die Information ist.</div>
+                </div>
+            </div>
+
+            <!-- Satelliten -->
+            <div class="legend-card">
+                <div class="legend-title">🛰️ Active Satellites</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Azimuth (Az)</div>
+                    <div class="legend-description">Himmelsrichtung des Satelliten (0-360°). 0°=Nord, 90°=Ost, 180°=Süd, 270°=West.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Elevation (El)</div>
+                    <div class="legend-description">Höhe über dem Horizont (-90° bis +90°). Negative Werte = unter Horizont. +90° = direkt über dir.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Distance (Dist)</div>
+                    <div class="legend-description">Entfernung zum Satellit in Kilometern. Wichtig für Signal-Strength-Berechnung.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Status</div>
+                    <div class="legend-description"><strong>✅ Visible:</strong> El > 0° (Sichtbar) | <strong>⬇️ Below:</strong> El < 0° (unter Horizont)</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">ISS</div>
+                    <div class="legend-description">Internationale Raumstation. Beste für Funk-Relais (SSB, FM, CW). Vorbeiflüge ca. alle 90 Min.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">NOAA-18/19</div>
+                    <div class="legend-description">Wetter-Satelliten. Für NOAA-Bildempfang (APT). Bahn über Pole.</div>
+                </div>
+            </div>
+
+            <!-- Propagation -->
+            <div class="legend-card">
+                <div class="legend-title">📡 Propagation Indices</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">SSN (Sunspot Number)</div>
+                    <div class="legend-description">Sonnenflecken-Index. 0-300. Mehr Flecken = höhere Sonnenaktivität = bessere HF-Propagation.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">R-Index</div>
+                    <div class="legend-description">Verhältnis K-Index * 10. Einfache Propagation-Vorhersage. 0-90.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Aurora</div>
+                    <div class="legend-description"><strong>Quiet:</strong> Keine Aurora | <strong>Visible:</strong> Aurora möglich (K > 4). Birdie-Effekt auf VHF/UHF!</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">MUF (Maximum Usable Frequency)</div>
+                    <div class="legend-description">Höchste Frequenz für Langstrecken-Kommunikation. Z.B. MUF=28 MHz = 10m-Band offen, 15m/20m schwach.</div>
+                </div>
+            </div>
+
+            <!-- QTH Info -->
+            <div class="legend-card">
+                <div class="legend-title">📍 QTH Information</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Maidenhead Locator (JN87ct)</div>
+                    <div class="legend-description">Raster-Koordinaten-System für Funkamateure. JN = Grid-Feld (Größe ~110km), 87 = Subsquare (ca. 5km), ct = weitere Unterteilung.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Koordinaten (Lat/Lon)</div>
+                    <div class="legend-description">Geografische Position in Grad (N/E). 47.8125°N 16.2083°E = Wien, Österreich.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">QTH</div>
+                    <div class="legend-description">"Quarter Then Here" - Begriffe für Standortbezeichnung. Z.B. "Wien, Österreich" oder "JN87ct".</div>
+                </div>
+            </div>
+
+            <!-- NASA SDO -->
+            <div class="legend-card">
+                <div class="legend-title">☀️ NASA SDO (Solar Dynamics Observatory)</div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Live-Bild der Sonne</div>
+                    <div class="legend-description">Echtzeit-Aufnahme der Sonne von der NASA. Zeigt Sonnenflecken, Flares und Koronale Massenauswürfe (CME).</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Sonnenflecken</div>
+                    <div class="legend-description">Dunkle Regionen mit starkem Magnetfeld. Mehr Flecken = höhere Sonnenaktivität = bessere HF-Propagation.</div>
+                </div>
+                
+                <div class="legend-item">
+                    <div class="legend-label">Aktuelle Updates</div>
+                    <div class="legend-description">Das Bild wird alle 5 Minuten aktualisiert. Direkt von der NASA Solar Dynamics Observatory.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🍯 OE3LCR Dashboard • Legenden & Erklärungen • Alle Angaben in UTC (Vienna = UTC+1)</p>
+        </div>
+    </div>
+</body>
+</html>
