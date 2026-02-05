@@ -182,12 +182,11 @@ Wenn dir das Dashboard gefällt und du es unterstützen möchtest:
 - **Share** mit anderen Funkamateuren
 - **Issues & PRs** sind willkommen!
 
-### 💳 Optional Spenden
-Die Arbeit an diesem Dashboard kostet Zeit & Energie. Falls du helfen möchtest:
+### 💳 Unterstütze dieses Projekt
+Die Arbeit an diesem Dashboard kostet Zeit & Energie. Falls du es magst und helfen möchtest:
 
-- **PayPal** (coming soon)
-- **Bitcoin** (coming soon)
-- **Ko-fi** (coming soon)
+- ☕ **[Buy Me A Coffee](https://www.buymeacoffee.com/christianraith)** - Schnelle kleine Unterstützung
+- 🅿️ **[PayPal](https://paypal.me/christianraith151)** - Spende in jeder Höhe
 
 Jede Unterstützung wird geschätzt! 🙏
 
@@ -208,7 +207,6 @@ Jede Unterstützung wird geschätzt! 🙏
 |------|------------|
 | [craith.cloud](https://craith.cloud) | Live Dashboard |
 | [info.html](https://craith.cloud/info.html) | Legenden & Erklärungen |
-| [myhoney Gallery](https://craith.cloud/myhoney/) | Private Gallery (geschützt) |
 | [QRZ.com OE3LCR](https://www.qrz.com/db/OE3LCR) | Amateur Radio Directory |
 
 ---
