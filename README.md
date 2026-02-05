@@ -87,7 +87,6 @@ cp index.html info.html /var/www/html/
 
 - ✅ **Keine API Keys** im Code
 - ✅ **Keine Credentials** hardcodiert
-- ✅ **Passwortgeschützter Bereich** (/myhoney/) ausgeschlossen
 - ✅ **Client-Side Berechnung** (keine Server-Last)
 - ✅ **Mobile-responsive** Design
 
